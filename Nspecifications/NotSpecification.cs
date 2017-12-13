@@ -14,7 +14,7 @@ namespace NSpecifications
         internal NotSpecification(ISpecification<T> inner)
         {
             if (inner == null)
-                throw new ArgumentNullException("spec");
+                throw new ArgumentNullException(nameof(inner));
 
             Inner = inner;
         }
